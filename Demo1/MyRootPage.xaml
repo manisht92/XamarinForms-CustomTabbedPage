@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              x:Class="Demo1.MyRootPage" xmlns:local="clr-namespace:Demo1"
+              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+              ios:Page.UseSafeArea="true"
+              xmlns:controls="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions">
+<!--    <ContentPage.Content>-->
+        <StackLayout BackgroundColor="Fuchsia" Orientation="Vertical">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" BackgroundColor="Green"
+                          Padding="30">
+                <StackLayout x:Name="page1_UI" BackgroundColor="Gray" Padding="10">
+                    <Label Text="Page1" TextColor="White" />
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Page1_Clicked" />
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+                <StackLayout x:Name="page2_UI" BackgroundColor="Transparent" Padding="10">
+                    <Label Text="Page2" TextColor="White" />
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Page2_Clicked" />
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+            </StackLayout>
+            <controls:CarouselViewControl IsSwipeEnabled="false" BackgroundColor="Gray" x:Name="myCarousel"
+                                           Orientation="Horizontal" Position="{Binding SelectedIndex}"
+                                           InterPageSpacing="10" VerticalOptions="FillAndExpand"
+                                           HorizontalOptions="FillAndExpand"
+                                           PositionSelected="Carousel_PositionSelected" />
+        </StackLayout>
+<!--    </ContentPage.Content>-->
+</ContentView>

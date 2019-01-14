@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              Visual="Material" x:Class="Demo1.MyPage" Padding="10,50,10,0">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Spacing="20">
+            <Entry Placeholder="Name" PlaceholderColor="DodgerBlue" BackgroundColor="White" VerticalOptions="Start" />
+            <Button Text="hi" VerticalOptions="Start" BackgroundColor="DodgerBlue" />
+            <Frame IsClippedToBounds="true" HasShadow="true" BackgroundColor="DodgerBlue" Margin="10" Padding="0"
+                    CornerRadius="10">
+                <StackLayout Padding="10,30,10,30">
+                    <Image Source="user.jpg" HeightRequest="120" WidthRequest="120" />
+                    <Label Text="nmbsmnabdm" TextColor="White" HorizontalTextAlignment="Center" />
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

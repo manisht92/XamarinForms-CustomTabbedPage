@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xf:BottomBarPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                   x:Class="Demo1.MyBottomBar" xmlns:local="clr-namespace:Demo1"
+                   xmlns:xf="clr-namespace:BottomBar.XamarinForms;assembly=BottomBar.XamarinForms">
+    <ContentPage Title="Page1" Icon="Favourites.png" xf:BottomBarPageExtensions.TabColor="#5D4037">
+        <local:MyRootPage />
+    </ContentPage>
+    <ContentPage Title="Page2" Icon="notification.png" xf:BottomBarPageExtensions.TabColor="#7B1FA2">
+        <local:Page2 />
+    </ContentPage>
+</xf:BottomBarPage>

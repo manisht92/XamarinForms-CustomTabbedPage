@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:local="clr-namespace:Demo1"
+              xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+              x:Class="Demo1.MainPage" BackgroundColor="#FDF7F3">
+    <ScrollView>
+        <StackLayout>
+            <Frame VerticalOptions="Start" Padding="0" CornerRadius="0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Image Source="bkgnd.jpg" Aspect="Fill" Grid.RowSpan="3" />
+                    <!-- Profile image -->
+                    <controls:CircleImage Source="user.jpg" WidthRequest="120" HeightRequest="120" BorderThickness="2" Margin="0, 40, 0, 0"
+                                           HorizontalOptions="Center" />
+                    <!-- Name and location -->
+                    <Label Text="John Smith" FontSize="32" TextColor="White" HorizontalOptions="Center" Grid.Row="1" />
+                    <Label Text="Redmond, WA, USA" FontSize="Medium" TextColor="#FBC7BE" HorizontalOptions="Center" Grid.Row="2"
+                            Margin="0, 0, 0, 15" />
+                </Grid>
+            </Frame>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
