@@ -26,5 +26,15 @@ namespace Demo1
         {
             Navigation.PushAsync(new MyBottomBar());
         }
+
+        void TabbedWithFab_Clicked(object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new TabbedWithFabPage());
+        }
+
+        void Elevation_Clicked(object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new ElevationFramePage());
+        }
     }
 }

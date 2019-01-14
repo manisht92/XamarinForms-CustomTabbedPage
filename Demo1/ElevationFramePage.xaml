@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              x:Class="Demo1.ElevationFramePage" xmlns:controls="clr-namespace:Demo1.Controls"
+              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+              ios:Page.UseSafeArea="true">
+    <ContentPage.Content>
+        <StackLayout Padding="40" Spacing="20">
+            <controls:MaterialFrame Elevation="15" ShadowOpacity="0.50" HasShadow="true" IsClippedToBounds="true" CornerRadius="10"
+                                     VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <StackLayout Padding="10" HeightRequest="60" HorizontalOptions="FillAndExpand">
+                    <Label Text="Some Text" HorizontalTextAlignment="Center"
+                            VerticalOptions="CenterAndExpand" />
+                </StackLayout>
+            </controls:MaterialFrame>
+            
+            <controls:MaterialFrame Elevation="6" ShadowOpacity="0.40" HasShadow="true" IsClippedToBounds="true" CornerRadius="10"
+                                     VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <StackLayout Padding="10" HeightRequest="60" HorizontalOptions="FillAndExpand">
+                    <Label Text="Some Text" HorizontalTextAlignment="Center"
+                            VerticalOptions="CenterAndExpand" />
+                </StackLayout>
+            </controls:MaterialFrame>
+            
+            <controls:MaterialFrame Elevation="6" ShadowOpacity="0.30" HasShadow="true" IsClippedToBounds="true" CornerRadius="10"
+                                     VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <StackLayout Padding="10" HeightRequest="60" HorizontalOptions="FillAndExpand">
+                    <Label Text="Some Text" HorizontalTextAlignment="Center"
+                            VerticalOptions="CenterAndExpand" />
+                </StackLayout>
+            </controls:MaterialFrame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

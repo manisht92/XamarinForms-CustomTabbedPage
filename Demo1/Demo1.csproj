@@ -19,4 +19,7 @@
     <Compile Remove="BottomBar\BottomBarPage.cs" />
     <Compile Remove="BottomBar\BottomBarPageExtensions.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controls\" />
+  </ItemGroup>
 </Project>

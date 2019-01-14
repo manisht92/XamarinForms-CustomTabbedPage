@@ -11,5 +11,10 @@ namespace Demo1
         {
             InitializeComponent();
         }
+
+        void Handle_Clicked(object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new Page3());
+        }
     }
 }

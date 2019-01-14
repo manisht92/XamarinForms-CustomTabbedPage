@@ -6,6 +6,8 @@
             <Button Text="Material Profile Demo" BackgroundColor="DodgerBlue" Clicked="Profile_Clicked" />
             <Button Text="Material Demo" BackgroundColor="DodgerBlue" Clicked="Material_Clicked" />
             <Button Text="BottomBar Demo" BackgroundColor="DodgerBlue" Clicked="BottomBar_Clicked" />
+            <Button Text="Tabbed Page With FAB Demo" BackgroundColor="DodgerBlue" Clicked="TabbedWithFab_Clicked" />
+            <Button Text="Elevation Demo" BackgroundColor="DodgerBlue" Clicked="Elevation_Clicked" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
